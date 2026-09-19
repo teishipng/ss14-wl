@@ -5,7 +5,6 @@
   children:
     - Arachnid
     - Diona
-    - Dwarf
     - Human
     - Moth
     - Reptilian
@@ -18,6 +17,8 @@
     - Felinid
     - Murine
     - CorvaxVulpkanin
+    - Cischi
+    - Golem
 #Corvax WhiteList-End
 
 - type: guideEntry
@@ -29,11 +30,6 @@
   id: Diona
   name: species-name-diona
   text: "/ServerInfo/Guidebook/Mobs/Diona.xml"
-
-- type: guideEntry
-  id: Dwarf
-  name: species-name-dwarf
-  text: "/ServerInfo/Guidebook/Mobs/Dwarf.xml"
 
 - type: guideEntry
   id: Human
@@ -80,6 +76,17 @@
   id: Murine
   name: species-name-murine
   text: "/ServerInfo/Guidebook/_WL/Mobs/Murine.xml"
+
+- type: guideEntry
+  id: Cischi
+  name: species-name-cischi
+  text: "/ServerInfo/Guidebook/_WL/Mobs/Cischi.xml"
+
+- type: guideEntry
+  id: Golem
+  name: species-name-golem
+  text: "/ServerInfo/Guidebook/_WL/Mobs/Golem.xml"
+
 #Corvax WhiteList-End
 
 # WL-Changes-start

@@ -11,7 +11,6 @@
   Их копыта твёрдые и имеют шероховатую подошву, которая помогает им передвигаться по замерзшему скользкому льду и скалам без особых проблем.\n
 
   ## Газы
-\n
   Цисчи имеют свой метаболизм газов:
   - Основной газ для дыхания - Диоксид углерода, но могут дышать и кислородом, но из-за этого они замедляются на 15% и быстрее голодают
   - Фрезон - лечит механический урон, токсины, ожоги и эирлосс
@@ -32,11 +31,9 @@
   ## Расовая кухня Цисчи
 \n
   Попросите у бармена [color=#a4885c]"Смерть коня"[/color] и [color=#a4885c]"Ложка дёгтя"[/color]
-
     <GuideReagentEmbed Reagent="SpoonOfTar"></GuideReagentEmbed>
 
 \n Или же одно из следующих блюд:
-
   <GuideMicrowaveEmbed Recipe="RecipeChickenTabaka"/>
   <GuideMicrowaveEmbed Recipe="RecipeCutletCischi"/>
   <GuideMicrowaveEmbed Recipe="RecipeOnionSliceCischi"/>

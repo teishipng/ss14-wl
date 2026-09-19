@@ -6,7 +6,6 @@
   <Box>
   <GuideEntityEmbed Entity="AppearanceArachnid" Caption="Арахнид"/>
   <GuideEntityEmbed Entity="AppearanceDiona" Caption="Диона"/>
-  <GuideEntityEmbed Entity="AppearanceDwarf" Caption="Дворф"/>
   <GuideEntityEmbed Entity="AppearanceHuman" Caption="Человек"/>
   </Box>
   <Box>
@@ -24,9 +23,11 @@
 
   <Box>
   <GuideEntityEmbed Entity="AppearanceAndroid" Caption="Андроид"/>
-  <GuideEntityEmbed Entity="AppearanceFelinid" Caption="Феленид"/>
+  <GuideEntityEmbed Entity="AppearanceFelinid" Caption="Фелинид"/>
   <GuideEntityEmbed Entity="AppearanceMurine" Caption="Мурин"/>
-  <GuideEntityEmbed Entity="AppearanceAkula" Caption="Акула"/>
+  <GuideEntityEmbed Entity="AppearanceAkula" Caption="Саренг"/>
+  <GuideEntityEmbed Entity="AppearanceCischi" Caption="Цисчи"/>
+  <GuideEntityEmbed Entity="AppearanceGolem" Caption="Голем"/>
   </Box>
 
 </Document>
