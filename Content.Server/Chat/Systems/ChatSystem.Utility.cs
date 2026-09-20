@@ -10,6 +10,7 @@ using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
+using Content.Shared.Traits.Assorted;
 
 namespace Content.Server.Chat.Systems;
 
@@ -74,12 +75,17 @@ public sealed partial class ChatSystem
             if (session.AttachedEntity is not { Valid: true } listener) // WL-Languages
                 continue;
 
-            //WL-Changes-Start Language
-            if (!_languages.CanUnderstand(source, listener, message))
-            {
-                var listenerMessage =
-                    _languages.ObfuscateMessageFromSource(message, source, listener);
+            var hearingImpaired = listener != source && HasComp<HearingImpairmentComponent>(listener);
+            var isShouting = message.Any(char.IsLetter) && message.All(c => !char.IsLetter(c) || !char.IsLower(c));
+            var isWithinHearingRange = data.Range <= 5;
 
+            //WL-Changes-Start Language
+            if (!_languages.CanUnderstand(source, listener, message)
+             || (hearingImpaired && (!isShouting || !isWithinHearingRange)))
+            {
+                var listenerMessage = hearingImpaired
+                    ? ObfuscateMessageReadability(message, 0f)
+                    : _languages.ObfuscateMessageFromSource(message, source, listener);
                 var listenerWrappedMessage =
                     _languages.IsObfusEmoting(source, message)
                         ? _languages.GetEmoteWrappedMessage(listenerMessage, source, Name(source))

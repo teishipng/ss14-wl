@@ -108,3 +108,13 @@
   category: Disabilities
   components:
     - type: ImpairedMobility
+
+# WL-Changes: Hearing impairment trait start
+- type: trait
+  id: HearingImpairment
+  name: trait-hearing-impairment-name
+  description: trait-hearing-impairment-desc
+  category: Disabilities
+  components:
+    - type: HearingImpairment
+# WL-Changes: Hearing impairment trait end
