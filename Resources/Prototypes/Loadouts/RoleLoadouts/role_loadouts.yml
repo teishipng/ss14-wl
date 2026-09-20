@@ -263,7 +263,7 @@
   - MusicianJumpsuit
   - CommonBackpack
   - MusicianOuterClothing
-  - Instruments
+  - Instruments #WL-Changes: remove duplicate loadout group
   - Glasses
   - AssistiveItems
   - Survival
