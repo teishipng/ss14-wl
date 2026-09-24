@@ -35,6 +35,11 @@
     enum.HumanoidVisualLayers.RHand:
       limit: 1
       required: false
+    #WL-Changes-start
+    enum.HumanoidVisualLayers.Socks:
+      limit: 1
+      required: false
+    #WL-Changes-end
     enum.HumanoidVisualLayers.LLeg:
       limit: 1
       required: false
@@ -254,11 +259,21 @@
   components:
   - type: VisualOrganMarkings
     markingsDisplacement:
+      UndergarmentTop:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Moth/displacement.rsi
+            state: jumpsuit-female
       UndergarmentBottom:
         sizeMaps:
           32:
-            sprite: /Mobs/Species/Moth/displacement.rsi
-            state: jumpsuit
+            sprite: Mobs/Species/Moth/displacement.rsi
+            state: jumpsuit-male
+      Socks:
+        sizeMaps:
+          32:
+            sprite: Mobs/Species/Moth/displacement.rsi
+            state: shoes
 #WL-Changes-end
 
 - type: entity

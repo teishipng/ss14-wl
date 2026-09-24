@@ -38,6 +38,11 @@
     enum.HumanoidVisualLayers.RHand:
       limit: 1
       required: false
+    #WL-Changes-start
+    enum.HumanoidVisualLayers.Socks:
+      limit: 1
+      required: false
+    #WL-Changes-end
     enum.HumanoidVisualLayers.LLeg:
       limit: 1
       required: false
@@ -246,6 +251,11 @@
           32:
             sprite: Corvax/Mobs/Species/displacement.rsi
             state: jumpsuit
+      Socks:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi
+            state: shoes
     #WL-Changes-end
 
 - type: entity
